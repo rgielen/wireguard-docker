@@ -1,7 +1,4 @@
-FROM debian:buster
-
-# Add debian backports repo for wireguard packages
-RUN echo "deb http://deb.debian.org/debian/ buster-backports main" > /etc/apt/sources.list.d/buster-backports.list
+FROM ubuntu:20.04
 
 # Install wireguard packges
 RUN apt-get update && \
