@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 # Install wireguard packges
 RUN apt-get update && \
- apt-get install -y --no-install-recommends wireguard-tools iptables nano net-tools procps openresolv inotify-tools && \
+ apt-get install -y --no-install-recommends wireguard-tools iptables nano net-tools procps openresolv inotify-tools iproute2 && \
  apt-get clean
 
 # Add main work dir to PATH
